@@ -1,0 +1,21 @@
+{% if include.table_attrs %}
+  {% assign attrs_to_use = include.table_attrs %}
+{% else %}
+  {% assign attrs_to_use = page.table_attrs %}
+{% endif %}
+
+{% capture attrs %}
+  {% for attr in attrs_to_use %}
+    {{ attr | first }}
+  {% endfor %}
+{% endcapture %}
+{% assign sorted_attrs = attrs | split: " " | sort_natural %}
+
+<table>
+  {% for attr in sorted_attrs %}
+    <tr>
+      <th>{{ attr | replace: 'ZZ_', '' | replace: 'AA_', '' | replace: '_', ' ' | capitalize }}</th>
+      <td>{{ attrs_to_use[attr] }}</td>
+    </tr>
+  {% endfor %}
+</table>

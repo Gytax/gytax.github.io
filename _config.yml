@@ -33,7 +33,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Kevin Ott
+  name: Gytax
   email:
   links:
     - https://github.com/gytax
@@ -79,7 +79,7 @@ social_preview_image: # string, local or CORS resources
 toc: true
 
 comments:
-  active: # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active: false # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
@@ -131,6 +131,10 @@ collections:
   tabs:
     output: true
     sort_by: order
+  hardware:
+    output: false
+    computers:
+      output: true
 
 defaults:
   - scope:
