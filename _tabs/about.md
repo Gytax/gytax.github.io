@@ -17,7 +17,7 @@ I very much enjoy tinkering with things, mostly technology related like writing 
 Nowadays, I mainly use Windows, since that's what runs on my [desktop](/posts/desktop/), however I tinker around in WSL a lot (like managing this blog through the use of Jekyll!) and my server runs TrueNAS Core, which is based on FreeBSD (on which, in turn, I also run a few Linux VM's).
 Work-wise, I used to have a laptop running Arch Linux (with i3 as window manager) that I held on to for as long as I could. Sadly, the time came for me to replace that one...and now I have a 16" Macbook with an M1 Pro. My experience with Mac OS is mostly limited to complaining about why this damned OS doesn't do what I want it to do and trying to customize it. It's great hardware, but I am definitely not a fan of the OS (or Apple in general to be honest). Since we’ve started working from home, I have found a perfect solution though;
 I SSH into my Macbook through VSCode remote so I keep my work dev stuff on my laptop and I can use my own desktop with my 3 screens and my vastly superior camera and audio setup to do meetings.
-> If you haven’t tried VSCode remote, go try it! It’s quite amazing and I’m really excited about it.
+> If you're a dev and you haven’t tried VSCode remote, go try it! It’s quite amazing and I’m really excited about it.
 {:.prompt-tip}
 
 About halfway through 2023, I picked up a new tinkering hobby; building Gundam plastic model kits. These kits come in a box filled with plastic bits you have to cut out of runners and then you click them together (no glue needed) to form an awesome robot that even has articulation. [Check them out, they're great!](/posts/gundam/).
@@ -35,7 +35,7 @@ Multiple, but the most fun one to use is from Conan the Barbarian (in the proper
 
 ### What’s your favorite band / music artist?
 Here are a few of my favorite bands, with a bandcamp link to a song of them I really like through an embed in a nifty little dropdown for your clicking and listening pleasure.
->If you like any of this, please consider supporting them through Bandcamp!
+>If you like any of this, please consider supporting the bands by buying their stuff through Bandcamp!
 {:.prompt-tip}
 
 <details>
