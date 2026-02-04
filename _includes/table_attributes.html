@@ -13,9 +13,29 @@
 
 <table>
   {% for attr in sorted_attrs %}
+    {% assign title = attr | replace: 'ZZ_', '' | replace: 'AA_', '' | replace: '_', ' ' %}
+    {% assign words = title | split: ' ' %}
+    {% assign processed_words = '' %}
+    {% for word in words %}
+      {% assign last_char = word | slice: -1 %}
+      {% if last_char == '!' %}
+        {% assign processed_word = word | remove: '!' | upcase %}
+      {% else %}
+        {% assign processed_word = word | capitalize %}
+      {% endif %}
+      {% if forloop.first %}
+        {% assign processed_words = processed_word %}
+      {% else %}
+        {% assign processed_words = processed_words | append: ' ' | append: processed_word %}
+      {% endif %}
+    {% endfor %}
+    {% assign title = processed_words %}
+
+    {% assign value = attrs_to_use[attr] | markdownify | remove: '<p>' | remove: '</p>' | strip %}
+
     <tr>
-      <th>{{ attr | replace: 'ZZ_', '' | replace: 'AA_', '' | replace: '_', ' ' | capitalize }}</th>
-      <td>{{ attrs_to_use[attr] }}</td>
+      <th>{{ title }}</th>
+      <td>{{ value }}</td>
     </tr>
   {% endfor %}
 </table>
